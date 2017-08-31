@@ -1,0 +1,261 @@
+.og-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+
+.gr {
+	display: inline-block;
+	margin: 10px 5px 0 5px;
+	vertical-align: top;
+	max-width: 90%;
+	width:29%;
+}
+
+.three {
+	display: inline-block;
+	margin: 10px 5px 0 5px;
+	vertical-align: top;
+	max-width: 90%
+}
+
+.portrait1{
+	width:15.7%;
+}
+
+.landscape1{
+	width:35.6%;
+}
+
+.portrait2{
+	width:20.46%;
+}
+
+.landscape2{
+	width:46.07%;
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+	max-width: 100%
+}
+
+.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #F05F40;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
+}
+
+.og-expander {
+	position: absolute;
+	background: #F05F40;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+}
+
+.gr .og-expander {
+	height:500px;
+}
+
+.landscape2 .og-expander {
+	height:500px;
+}
+
+.og-expander-inner {
+	padding: 50px 30px;
+	height: 100%;
+}
+
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: white;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+	background: #333;
+}
+
+.og-fullimg,
+.og-details {
+	width: 50%;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.og-details {
+	padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+	text-align: center;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.og-details h3 {
+	font-weight: 300;
+	font-size: 52px;
+	padding: 40px 0 10px;
+	margin-bottom: 10px;
+	color:white;
+}
+
+.og-details p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: white;
+}
+
+.og-details a {
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border: 3px solid #333;
+	display: inline-block;
+	margin: 0px 0 0;
+	outline: none;
+}
+
+.og-details a::before {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.og-details a:hover {
+	border-color: #999;
+	color: #999;
+}
+
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #F05F40;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+.og-details .codes{
+	font-size: 12px;
+	color:#F89E9E;
+	margin-bottom:0;
+}
+
+.og-details .material{
+	font-size: 12px;
+	color:#8D2020;
+	margin-bottom:0;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #F05F40; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #F05F40; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #F05F40, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #F05F40; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #F05F40; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #F05F40, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #F05F40; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #F05F40; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #F05F40, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 830px) {
+
+	.og-expander h3 { font-size: 32px; }
+	.og-expander p { font-size: 13px; }
+	.og-expander a { font-size: 12px; }
+
+}
+
+@media screen and (max-width: 650px) {
+
+	.og-fullimg{
+		width:100%;
+		height:auto;
+		padding-top: 45px;
+		text-align: center;
+	}
+
+	.portrait2 .og-fullimg{
+		padding:0 15%;
+		height:auto;
+	}
+
+	.og-details {
+		width: 100%;
+		text-align: center;
+	}
+
+	.og-details h3{
+		padding:0px;
+	}
+
+	.og-loading{
+		margin: 0px;
+	}
+}
